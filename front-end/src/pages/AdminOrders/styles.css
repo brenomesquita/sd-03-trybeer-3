@@ -12,24 +12,6 @@
   margin-right: 40px;
 }
 
-.product-plus{
-	height: 25px;
-	border-radius: 25px;
-	outline: none;
-	border: none;
-  background: green;
-  cursor: pointer;
-}
-
-.product-minus{
-	height: 25px;
-	border-radius: 25px;
-	outline: none;
-	border: none;
-  background: red;
-  cursor: pointer;
-}
-
 .checkout-bottom-btn{
   display: block;
 	width: 100%;

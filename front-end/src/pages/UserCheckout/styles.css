@@ -7,11 +7,6 @@
 }
 
 .removal-button{
-	height: 25px;
-	border-radius: 25px;
-	outline: none;
-	border: none;
-  background: red;
   cursor: pointer;
 }
 
