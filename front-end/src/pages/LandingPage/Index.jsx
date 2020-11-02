@@ -3,11 +3,12 @@ import { useHistory } from 'react-router-dom';
 import bigBangBeerLogo from '../../assets/images/bigBangBeerLogo.gif';
 import tableslogan from '../../assets/images/tableslogan.jpg';
 import createicon from '../../assets/images/createicon.png';
-import createiconhover from '../../assets/images/createicon-hover.png';
+import topicon from '../../assets/images/topicon.png';
+import cheersicon from '../../assets/images/cheersicon.png';
 
 import './styles.css';
 
-const enterButton = (clickToEnter, isDisabled) => (
+const enterButton = (clickToEnter) => (
   <div>
     <button
       className="signin-btn"
@@ -53,7 +54,7 @@ function LandingPage() {
         <section>
           <img src={ tableslogan } alt="bing bang beer logo" className="img-slogan" />
           <h1 className="tittle-slogan">
-            Uma
+            Tenha uma
             {' '}
             <strong>explosão</strong>
             {' '}
@@ -66,21 +67,22 @@ function LandingPage() {
         <section className="description">
           <h1 className="tittle-description">Como funciona o Big Bang Beer?</h1>
           <span>
-            <img src={ create ? createiconhover : createicon } onMouseEnter={() => setCreate(!create)} onMouseLeave={() => setCreate(!create)} alt="create acount icon" className="icons" />
+            <img src={ createicon } alt="create acount icon" className="icons" />
             <h1 className="tittle-description">1- Crie Sua Conta</h1>
             <p className="sub-tittle-description">Crie sua conta grátis e peça sua bebida gelada de qualquer lugar</p>
           </span>
           <span>
-            <img src={ bigBangBeerLogo } alt="bing bang beer logo" className="icons" />
+            <img src={ topicon } alt="bing bang beer logo" className="icons" />
             <h1 className="tittle-description">2- Só as melhores</h1>
-            <p className="sub-tittle-description">Aqui vocẽ encontra suas bebidas preferidas geladinhas</p>
+            <p className="sub-tittle-description">Aqui você encontra suas bebidas preferidas geladinhas</p>
           </span>
           <span>
-            <img src={ bigBangBeerLogo } alt="bing bang beer logo" className="icons" />
+            <img src={ cheersicon } alt="bing bang beer logo" className="icons" />
             <h1 className="tittle-description">3- Festeje!!</h1>
             <p className="sub-tittle-description">Suas bebidas chegam geladinhas e super rápidas, para você e seus amigos 🍻🎊</p>
           </span>
         </section>
+        
       </body>
     </div>
   );

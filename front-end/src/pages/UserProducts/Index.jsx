@@ -82,7 +82,7 @@ const productsCards = (products, purchase, setPurchase, total, setTotal) => (
       <div key={ e.id - 1 }>
         <div className="products-card">
           <img data-testid={ `${(e.id - 1)}-product-img` } src={ e.image } width="100px" alt={ e.name } />
-          <h2 data-testid={ `${(e.id - 1)}-product-name` }>{e.name}</h2>
+          <h2 className="products-card-text" data-testid={ `${(e.id - 1)}-product-name` }>{e.name}</h2>
           <h3 className="product-price" data-testid={ `${(e.id - 1)}-product-price` }>
             R$
             {(e.price).toFixed(2).replace('.', ',')}
