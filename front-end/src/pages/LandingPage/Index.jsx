@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { useHistory } from 'react-router-dom';
 import bigBangBeerLogo from '../../assets/images/bigBangBeerLogo.gif';
 import tableslogan from '../../assets/images/tableslogan.jpg';
@@ -34,7 +34,6 @@ const registerButton = (history) => (
 
 function LandingPage() {
   const history = useHistory();
-  const [create, setCreate] = useState(false)
 
   const clickToEnter = async () => {
     history.push('/login');
@@ -82,7 +81,6 @@ function LandingPage() {
             <p className="sub-tittle-description">Suas bebidas chegam geladinhas e super rápidas, para você e seus amigos 🍻🎊</p>
           </span>
         </section>
-        
       </body>
     </div>
   );
