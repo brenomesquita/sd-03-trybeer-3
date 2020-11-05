@@ -16,9 +16,9 @@ function TopMenu(title) {
             alt='side-menu'
             height="42"
           />
-        {SideMenu(sideMenuState)}
+      {SideMenu(sideMenuState)}
         </div>
-        <h1 className="top-title" data-testid="top-title">{title}</h1>
+        <h1 data-testid="top-title">{title}</h1>
       </header>
     </div>
   )
