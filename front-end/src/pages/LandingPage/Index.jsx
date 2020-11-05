@@ -11,7 +11,7 @@ import './styles.css';
 const enterButton = (clickToEnter) => (
   <div>
     <button
-      className='signin-btn'
+      className="signin-btn"
       onClick={ () => clickToEnter() }
     >
       ENTRAR

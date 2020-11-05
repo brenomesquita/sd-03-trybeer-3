@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { useHistory } from 'react-router-dom';
 import { allSales } from '../../services/trybeerUserAPI';
 import SideMenuAdmin from '../../components/SideMenuAdmin';
-import './styles.css';
+import "./styles.css";
 import Loading from '../../components/Loading/Index';
 
 const productsCards = (purchase, clickToOrdersDetail) => (
@@ -13,7 +13,7 @@ const productsCards = (purchase, clickToOrdersDetail) => (
           key={e.id}
           onClick={() => clickToOrdersDetail((index + 1))}
           data-testid={`${index}-order-card-container`}
-          className='orders-products-card'
+          className="orders-products-card"
         >
           <p data-testid={`${index}-order-number`}>Pedido {(index + 1)}</p>
           <p data-testid={`${index}-order-address`}>{e.address}, {e.number}</p>

@@ -1,6 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Login from './pages/Login/Index';
+import LandingPage from './pages/LandingPage/Index';
 import Register from './pages/Register/Index';
 import UserProfile from './pages/UserProfile/Index';
 import UserProducts from './pages/UserProducts/Index';
@@ -15,7 +16,7 @@ function Routes() {
   return (
     <Router>
       <Switch>
-        <Route exact path="/" component={ Login } />
+        <Route exact path="/" component={ LandingPage } />
         <Route exact path="/login" component={ Login } />
         <Route exact path="/register" component={ Register } />
         <Route exact path="/profile" component={ UserProfile } />
