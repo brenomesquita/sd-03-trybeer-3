@@ -3,6 +3,7 @@ import { useHistory } from 'react-router-dom';
 import { allSales } from "../../services/trybeerUserAPI";
 import SideMenuAdmin from '../../components/SideMenuAdmin';
 import "./styles.css";
+import Loading from '../../components/Loading/Index';
 
 const productsCards = (purchase, clickToOrdersDetail) => (
   <div className="order-container-card">
@@ -12,6 +13,7 @@ const productsCards = (purchase, clickToOrdersDetail) => (
           key={e.id}
           onClick={() => clickToOrdersDetail((index + 1))}
           data-testid={`${index}-order-card-container`}
+          className="orders-products-card"
         >
           <p data-testid={`${index}-order-number`}>Pedido {(index + 1)}</p>
           <p data-testid={`${index}-order-address`}>{e.address}, {e.number}</p>
@@ -41,7 +43,7 @@ function AdminOrders() {
 
   useEffect(() => {
     const actualUser = JSON.parse(localStorage.getItem('user'));
-    if(!actualUser) return window.location.assign('http://localhost:3000/login');
+    if (!actualUser) return window.location.assign('http://localhost:3000/login');
     itensList(setPurchase);
   }, []);
 
@@ -51,8 +53,9 @@ function AdminOrders() {
 
   return (
     <div>
+      {purchase.length === 0 && <Loading />}
       {SideMenuAdmin()}
-      <div className="container-order-container-card">
+      <div className="checkout-container">
         <h2>Pedidos</h2>
         {productsCards(purchase, clickToOrdersDetail)}
       </div>
