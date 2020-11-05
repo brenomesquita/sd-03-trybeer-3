@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/sd-03-trybeer-3/static/css/main.71674b4d.chunk.css",
-    "main.js": "/sd-03-trybeer-3/static/js/main.dba57350.chunk.js",
-    "main.js.map": "/sd-03-trybeer-3/static/js/main.dba57350.chunk.js.map",
-    "runtime-main.js": "/sd-03-trybeer-3/static/js/runtime-main.f9e01c36.js",
-    "runtime-main.js.map": "/sd-03-trybeer-3/static/js/runtime-main.f9e01c36.js.map",
-    "static/js/2.808d57a9.chunk.js": "/sd-03-trybeer-3/static/js/2.808d57a9.chunk.js",
-    "static/js/2.808d57a9.chunk.js.map": "/sd-03-trybeer-3/static/js/2.808d57a9.chunk.js.map",
-    "index.html": "/sd-03-trybeer-3/index.html",
-    "precache-manifest.450cffba891a4127e40d07fb6cd8a3bf.js": "/sd-03-trybeer-3/precache-manifest.450cffba891a4127e40d07fb6cd8a3bf.js",
-    "service-worker.js": "/sd-03-trybeer-3/service-worker.js",
-    "static/css/main.71674b4d.chunk.css.map": "/sd-03-trybeer-3/static/css/main.71674b4d.chunk.css.map",
-    "static/js/2.808d57a9.chunk.js.LICENSE.txt": "/sd-03-trybeer-3/static/js/2.808d57a9.chunk.js.LICENSE.txt",
-    "static/media/bigBangBeerLogo.gif": "/sd-03-trybeer-3/static/media/bigBangBeerLogo.170a14fd.gif",
-    "static/media/cardapio.svg": "/sd-03-trybeer-3/static/media/cardapio.de8cb248.svg",
-    "static/media/tableslogan.jpg": "/sd-03-trybeer-3/static/media/tableslogan.dc52dd2e.jpg"
+    "main.css": "/static/css/main.71674b4d.chunk.css",
+    "main.js": "/static/js/main.28198c08.chunk.js",
+    "main.js.map": "/static/js/main.28198c08.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.e327d292.js",
+    "runtime-main.js.map": "/static/js/runtime-main.e327d292.js.map",
+    "static/js/2.808d57a9.chunk.js": "/static/js/2.808d57a9.chunk.js",
+    "static/js/2.808d57a9.chunk.js.map": "/static/js/2.808d57a9.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.03c2f16b9c0437e8fe09c2dd5ef0eb65.js": "/precache-manifest.03c2f16b9c0437e8fe09c2dd5ef0eb65.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.71674b4d.chunk.css.map": "/static/css/main.71674b4d.chunk.css.map",
+    "static/js/2.808d57a9.chunk.js.LICENSE.txt": "/static/js/2.808d57a9.chunk.js.LICENSE.txt",
+    "static/media/bigBangBeerLogo.gif": "/static/media/bigBangBeerLogo.170a14fd.gif",
+    "static/media/cardapio.svg": "/static/media/cardapio.de8cb248.svg",
+    "static/media/tableslogan.jpg": "/static/media/tableslogan.dc52dd2e.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.f9e01c36.js",
+    "static/js/runtime-main.e327d292.js",
     "static/js/2.808d57a9.chunk.js",
     "static/css/main.71674b4d.chunk.css",
-    "static/js/main.dba57350.chunk.js"
+    "static/js/main.28198c08.chunk.js"
   ]
 }
