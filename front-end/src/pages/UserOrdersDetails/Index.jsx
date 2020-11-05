@@ -10,7 +10,7 @@ const productsCards = (purchase) => (
       const totalProduct = (parseFloat(e.price) * parseInt(e.amount)).toFixed(2).replace('.', ',');
       return (
         <div>
-          <div className="products-card">
+          <div className="orders-products-card">
             <p data-testid={`${index}-product-qtd`}>{e.amount}</p>
             <p data-testid={`${index}-product-name`}>{e.name}</p>
             <p data-testid={`${index}-product-total-value`}>R$ {totalProduct}</p>
@@ -64,7 +64,7 @@ function UserOrdersDetails() {
   return (
     <div>
       {TopMenu('Detalhes de Pedido')}
-      <div className="container-checkout-container-card">
+      <div className="checkout-container">
         <p data-testid="order-number" className="order-number">Pedido {id}</p>
         <p data-testid="order-date" className="order-date">{dateFunc(day)}/{dateFunc(month)}</p>
         {productsCards(purchase)}

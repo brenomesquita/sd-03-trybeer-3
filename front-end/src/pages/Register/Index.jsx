@@ -99,6 +99,7 @@ function Register() {
   const clickToEnter = async () => {
     const newUser = await postNewUser(name, email, password, role);
 
+    console.log(newUser)
     if (newUser.error) {
       return new Promise((resolve) => resolve(setAlertEmailExist(newUser.err.response.data)))
         .then(() => setTimeout(() => {
