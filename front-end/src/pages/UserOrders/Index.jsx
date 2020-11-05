@@ -5,7 +5,7 @@ import TopMenu from '../../components/TopMenu/Index';
 import "./styles.css";
 
 const productsCards = (purchase, clickToCart) => (
-  <div className="checkout-container">
+  <div className="order-container-card">
     {purchase.map((e, index) => {
       const month = new Date(e.date).getMonth()+1;
       const day = new Date(e.date).getUTCDate();
@@ -14,12 +14,11 @@ const productsCards = (purchase, clickToCart) => (
           key={e.id}
           onClick={() => clickToCart((index + 1))}
           data-testid={`${index}-order-card-container`}
-          className="orders-products-card"
         >
           <p data-testid={`${index}-order-number`}>Pedido {(index + 1)}</p>
           <p data-testid={`${index}-order-date`}>{`${("0" + day).slice(-2)}/${("0" + (month)).slice(-2)}`}</p>
           <p data-testid={`${index}-order-total-value`}>
-           R$ {parseFloat(e.total).toFixed(2).replace('.', ',')}
+            R$ {parseFloat(e.total).toFixed(2).replace('.', ',')}
           </p>
         </div>
       );
